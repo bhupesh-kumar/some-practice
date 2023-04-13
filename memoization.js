@@ -9,7 +9,6 @@ Implement a function called memoizedSquare which will calculate
 the square of a number for the first time and for the subsequent
 times, will return from cache the already computed result
 
-
 */
 
 function findSquare(value) {
