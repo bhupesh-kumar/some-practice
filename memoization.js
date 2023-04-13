@@ -18,7 +18,7 @@ function findSquare(value) {
 function memoizedSquare(num) { 
     let storageObj = {};
     
-    function performSquare(num) { 
+    return function performSquare(num) { 
         if (Object.keys(storageObj).find(data => data == num)) {
             console.log('existing->',storageObj[num]);
         } else { 
@@ -26,7 +26,6 @@ function memoizedSquare(num) {
             console.log('added->',storageObj[num]);
         }
     }
-    return performSquare;
 }
 
 const session1 = memoizedSquare();
